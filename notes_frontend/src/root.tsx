@@ -13,14 +13,11 @@ export default component$(() => {
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
    * immediately followed by the document's <head> and <body>.
-   *
-   * Don't remove the `<head>` and `<body>` elements.
    */
-
   return (
     <QwikCityProvider>
       <head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         {!isDev && (
           <link
             rel="manifest"
@@ -30,7 +27,7 @@ export default component$(() => {
         <RouterHead />
         {!isDev && <ServiceWorkerRegister />}
       </head>
-      <body lang="en">
+      <body lang="en" class="app-root">
         <RouterOutlet />
       </body>
     </QwikCityProvider>

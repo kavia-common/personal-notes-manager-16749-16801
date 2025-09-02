@@ -53,7 +53,14 @@ export default defineConfig(({ command, mode }): UserConfig => {
       },
       port: 3000,
       host: '0.0.0.0',
-      allowedHosts: ['.kavia.ai'],
+      // Optional: Uncomment and adjust to proxy /api to your backend during dev.
+      // proxy: {
+      //   "/api": {
+      //     target: "http://localhost:8000",
+      //     changeOrigin: true,
+      //     secure: false,
+      //   },
+      // },
     },
     preview: {
       headers: {
