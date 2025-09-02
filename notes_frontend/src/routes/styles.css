@@ -1,0 +1,5 @@
+/* Route wrapper baseline (global layout handled in global.css) */
+.app {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
